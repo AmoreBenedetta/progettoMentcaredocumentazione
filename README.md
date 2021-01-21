@@ -69,6 +69,7 @@ Le attività previste per lo staff medico sono:
  - Dalla cartella clinica inserire le diagnosi, le visite effettuate con eventuali terapie prescritte;
  - Dalla cartella clinica, segnalare un allert nel caso di situazione critica;
  - Dalla homepage, stampare lo storico di un paziente.
+ https://app.genmymodel.com/api/projects/_cTV7QFwOEeul4L4ngN2BiA/diagrams/_cTV7Q1wOEeul4L4ngN2BiA/svg
 
 ### INFERMIERE e INFERMIERE A DOMICILIO
 Le attività previste per gli infermieri sono:
