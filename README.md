@@ -2,8 +2,6 @@
 ## ESAME DI INGEGNERIA DEL SOFTWARE
 ### Studente: Amore Benedetta
 ### Matricola: VR 445458
-### Studente: Frasson Alessia
-### Matricola: VR 447848
 ### Docente: Mariano Ceccato
 ### Anno Accademico: 2020/2021
 
@@ -21,6 +19,7 @@
  - TEST SELECTION (SCENARI E DATI)
  - TEST COVERAGE (UNIT TEST)
  - ### SCELTE IMPLEMENTATIVE 
+ - TOOL DI SVILUPPO
 #
 # REQUISITI
 Al fine di garantire la praticità a tutti gli utenti, il sistema di cliniche prevede un'applicazione utilizzabile sia da computer sia da smartphone. 
@@ -59,18 +58,18 @@ Il manager ha accesso come amministratore e può inserire un nuovo paziente, cre
 Le attività previste per lo staff medico sono:
  - Accesso al sistema con login e password mediche;
  - Nella homepage, visualizzare la lista di pazienti;
- - Dalla homepage, segnalare un allert nel caso di situazioni critiche;
  - Dalla homepage, aprire la cartella clinica dei pazienti; 
- - Dalla cartella clinica inserire le diagnosi, le terapie prescritte, le attività svolte e i farmaci somministrati;
- - Dalla homepage, visualizzare e stampare lo storico di un paziente.
+ - Dalla cartella clinica inserire le diagnosi, le visite effettuate con eventuali terapie prescritte;
+ - Dalla cartella clinica, segnalare un allert nel caso di situazione critica;
+ - Dalla homepage, stampare lo storico di un paziente.
 
 ### INFERMIERE e INFERMIERE A DOMICILIO
 Le attività previste per gli infermieri sono:
  - Accesso al sistema con login e password sub-mediche;
  - Nella homepage, visualizzare la lista di pazienti;
- - Dalla homepage, segnalare un allert nel caso di situazioni critiche; 
  - Dalla homepage, aprire la cartella clinica dei pazienti;
  - Dalla cartella clinica inserire le attività svolte e i farmaci somministrati;
+ - Dalla cartella clinica, segnalare un allert nel caso di situazione critica; 
  - Dalla homepage, visualizzare e stampare lo storico di un paziente.
  
 ### RECEPTIONIST
@@ -114,52 +113,13 @@ Il report contiene il numero di pazienti in ogni clinica diurna, il numero di pa
 
 #
 # SCELTE IMPLEMENTATIVE
+Il patter su cui si basta il nostro progetto è MVC, in cui il Controller gestisce le azioni che può compiere un medico, una volta loggato; il Model è un database di pazienti, visite e prescrizioni; il View è l'interfaccia con il medico, creata in HTML.
+Abbiamo scelto questo pattern strutturale in quanto si adatta alla nostra piattaforma web e all'utilizzo della stessa sia su computer sia su smartphone, dove l'interfaccia può subire delle variazioni ed è richiesta tra i requisiti un'interazione diretta tra medico e famigliare o tutore del paziente. Inoltre il MVC consente di dividere nettamente la parte di visualizzazione e gestione della base di dati, che può aumentare o diminuire indipendentemente dal resto del sistema.
+Abbiamo scelto di implementare per intero la parte di controllo sulle attività che può svolgere il medico, su cui sono stati eseguiti tutti i casi di test.
 
-
-
-
-# Markdown extensions
-
-StackEdit extends the standard Markdown syntax by adding extra **Markdown extensions**, providing you with some nice features.
-
-> **ProTip:** You can disable any **Markdown extension** in the **File properties** dialog.
-
-
-## SmartyPants
-
-SmartyPants converts ASCII punctuation characters into "smart" typographic punctuation HTML entities. For example:
-
-|                |ASCII                          |HTML                         |
-|----------------|-------------------------------|-----------------------------|
-|Single backticks|`'Isn't this fun?'`            |'Isn't this fun?'            |
-|Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
-|Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
-
-
-
-
-## UML diagrams
-
-You can render UML diagrams using [Mermaid](https://mermaidjs.github.io/). For example, this will produce a sequence diagram:
-
-```mermaid
-sequenceDiagram
-Alice ->> Bob: Hello Bob, how are you?
-Bob-->>John: How about you John?
-Bob--x Alice: I am good thanks!
-Bob-x John: I am good thanks!
-Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
-
-Bob-->Alice: Checking with John...
-Alice->John: Yes... John, how are you?
-```
-
-And this will produce a flow chart:
-
-```mermaid
-graph LR
-A[Square Rect] -- Link text --> B((Circle))
-A --> C(Round Rect)
-B --> D{Rhombus}
-C --> D
-```
+## TOOL DI SVILUPPO
+Per lo sviluppo della nostra applicazione abbiamo usato il tool IntelliJ, proposto a lezione.
+Abbiamo scelto di implementare l'interfaccia web in HTML, per quanto riguarda l'impaginazione e la grafica, in JavaScript abbiamo fatto i controlli sui form di inserimento e il codice lo abbiamo scritto in Java. Come requisito abbiamo sviluppato in gradle la parte di compilazione e testing del software.
+Le versioni del software le abbiamo condivise in modo centralizzato su OneDrive, per scaricarle e aggiornarle in locale, invece la condivisione del progetto finito è avvenuta su github.
+I diagrammi UML li abbiamo creati con il tool on-line genmymodel e li abbiamo importati nella documentazione.
+Per scrivere la documentazione in formato .md abbiamo usato il tool on-line stackedit.
