@@ -79,13 +79,15 @@ Le attività previste per gli infermieri sono:
  - Dalla cartella clinica inserire le attività svolte e i farmaci somministrati;
  - Dalla cartella clinica, segnalare un allert nel caso di situazione critica; 
  - Dalla homepage, visualizzare e stampare lo storico di un paziente.
- 
+ https://app.genmymodel.com/api/projects/_GgK7IFwUEeul4L4ngN2BiA/diagrams/_GgK7I1wUEeul4L4ngN2BiA/svg
+
 ### RECEPTIONIST
 Le attività previste per le receptionist sono:
  - Accesso al sistema con login e password semplici;
  - Nella homepage, visualizzare l'agenda di ogni medico;
  - Inserire un appuntamento con un paziente o con un famigliare/tutore.
- 
+ https://app.genmymodel.com/api/projects/_QnSfoFwVEeul4L4ngN2BiA/diagrams/_QnSfo1wVEeul4L4ngN2BiA/svg
+
 ### MANAGER
 Le attività previste per il manager sono:
  - Accesso al sistema con login e password da amministratore;
@@ -93,13 +95,13 @@ Le attività previste per il manager sono:
  - Archiviare la cartella clinica dei pazienti che concludono il trattamento;
  - Visualizzare lo storico del paziente ed esportarlo su richiesta;
  - Visualizzare il report mensile amministrativo ed economico.
-
+https://app.genmymodel.com/api/projects/_77z5oFwVEeul4L4ngN2BiA/diagrams/_77z5o1wVEeul4L4ngN2BiA/svg
 #
 ## ACTIVITY DIAGRAM
-
+https://app.genmymodel.com/api/projects/_HhIrEFwjEeul4L4ngN2BiA/diagrams/_HhIrFFwjEeul4L4ngN2BiA/svg
 #
 ## SEQUENCE DIAGRAM
-
+https://app.genmymodel.com/api/projects/_MdrZwFx0Eeul4L4ngN2BiA/diagrams/_MdrZxFx0Eeul4L4ngN2BiA/svg
 
 #
 ## CLASS DIAGRAM
