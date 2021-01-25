@@ -16,8 +16,6 @@
  - SEQUENCE DIAGRAM PER CONTROLLER
  - CLASS DIAGRAM PER LE CLASSI IMPLEMENTATE
  - ### QUALITY ASSURANCE
- - TEST SELECTION (SCENARI E DATI)
- - TEST COVERAGE (UNIT TEST)
  - ### SCELTE IMPLEMENTATIVE 
  - TOOL DI SVILUPPO
 #
@@ -105,17 +103,19 @@ https://app.genmymodel.com/api/projects/_MdrZwFx0Eeul4L4ngN2BiA/diagrams/_MdrZxF
 
 #
 ## CLASS DIAGRAM
-
+pdf in allegato.
 
 #
 # QUALITY ASSURANCE
-## TEST SELECTION
-
-## TEST COVERAGE
+Per eseguire i test abbiamo usato: JUnit per lo unit testing e JWebUnit per l’acceptance testing.
+Abbiamo svolto test di unità su ogni classe appartenenta al package Models.
+Per le classi Diagnosi, Farmaco, Paziente, Prescrizione e Visita sono stati testati tutti i metodi Getter e Setter appartenenti a ciascuna classe.
+Per completezza, nonostante queste fossero funzioni implementate dall’interfaccia CrudRepository sono stati testati, per ogni classe appartenente al package Repositories, anche i principali metodi di: inserimento, cancellazione e cancellazione di tutti gli elementi.
+La coverage riscontrata dai test sul package Model è del 100%
 
 #
 # SCELTE IMPLEMENTATIVE
-Il patter su cui si basta il nostro progetto è Spring-MVC, in cui il Controller gestisce le azioni che può compiere un medico, una volta loggato; il Model è un database di pazienti, visite e prescrizioni; il View è l'interfaccia con il medico, creata in HTML.
+Il patter su cui si basta il nostro progetto è Spring-MVC, in cui il Controller gestisce le azioni che può compiere un medico, una volta loggato; il Model contiene tutte le classi che fanno riferimento ai dati salvati in modo persistente; il View è l'interfaccia con il medico, creata in HTML.
 Abbiamo scelto questo pattern strutturale in quanto si adatta alla nostra piattaforma web e all'utilizzo della stessa sia su computer sia su smartphone, in quanto l'interfaccia può subire delle variazioni, ed è richiesta tra i requisiti l'interazione diretta tra i medici e un famigliare/tutore del paziente.
 Inoltre Spring-MVC consente di dividere nettamente la parte di visualizzazione e gestione della base di dati, che può aumentare o diminuire indipendentemente dal resto del sistema.
 Abbiamo scelto di implementare per intero la parte di controllo sulle attività che può svolgere il medico, su cui sono stati eseguiti tutti i casi di test.
@@ -123,7 +123,7 @@ In fase di implementazione, abbiamo evitato di gestire il login del medico e la 
 
 ## TOOL DI SVILUPPO
 Per lo sviluppo della nostra applicazione abbiamo usato il tool IntelliJ, proposto a lezione.
-Abbiamo scelto di implementare l'interfaccia web in HTML, per quanto riguarda l'impaginazione e la grafica, in JavaScript abbiamo fatto i controlli sui form di inserimento e il codice lo abbiamo scritto in Java. Come requisito abbiamo sviluppato in gradle la parte di compilazione e testing del software.
+Abbiamo scelto di implementare l'interfaccia web in HTML e il codice in SpingBoot. Come requisito abbiamo sviluppato in gradle la parte di compilazione e testing del software.
 Le versioni del software le abbiamo condivise in modo centralizzato su OneDrive, per scaricarle e aggiornarle in locale, invece la condivisione del progetto finito è avvenuta su github.
 I diagrammi UML li abbiamo creati con il tool on-line genmymodel e li abbiamo importati nella documentazione.
 Per scrivere la documentazione in formato .md abbiamo usato il tool on-line stackedit.
