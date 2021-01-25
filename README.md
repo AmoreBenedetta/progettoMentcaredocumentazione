@@ -103,7 +103,7 @@ https://app.genmymodel.com/api/projects/_MdrZwFx0Eeul4L4ngN2BiA/diagrams/_MdrZxF
 
 #
 ## CLASS DIAGRAM
-pdf in allegato.
+[Link class diagram](https://github.com/AmoreBenedetta/progettoMentcare/blob/main/Starter%20Class%20Diagram%20%282%29.pdf)
 
 # QUALITY ASSURANCE
 ## UNIT TEST
