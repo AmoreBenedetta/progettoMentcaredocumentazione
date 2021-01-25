@@ -105,13 +105,58 @@ https://app.genmymodel.com/api/projects/_MdrZwFx0Eeul4L4ngN2BiA/diagrams/_MdrZxF
 ## CLASS DIAGRAM
 pdf in allegato.
 
-#
 # QUALITY ASSURANCE
-Per eseguire i test abbiamo usato: JUnit per lo unit testing e JWebUnit per l’acceptance testing.
-Abbiamo svolto test di unità su ogni classe appartenenta al package Models.
-Per le classi Diagnosi, Farmaco, Paziente, Prescrizione e Visita sono stati testati tutti i metodi Getter e Setter appartenenti a ciascuna classe.
-Per completezza, nonostante queste fossero funzioni implementate dall’interfaccia CrudRepository sono stati testati, per ogni classe appartenente al package Repositories, anche i principali metodi di: inserimento, cancellazione e cancellazione di tutti gli elementi.
-La coverage riscontrata dai test sul package Model è del 100%
+## UNIT TEST
+Abbiamo svolto test di unità su ogni classe appartenente al package *Models*.
+Per le classi *Diagnosi, Farmaco, Paziente, Prescrizione e Visita* sono stati testati tutti i metodi Getter e Setter appartenenti a ciascuna classe.
+
+Per completezza, nonostante queste fossero funzioni implementate dall'interfaccia *CrudRepository* sono stati testati, per ogni classe appartenente al package *Repositories*, anche i principali metodi di: inserimento, cancellazione e cancellazione di tutti gli elementi.
+
+La coverage riscontrata dai test sul package *Model* è del 100%.
+
+## ACCEPTANCE TEST
+Sono state testate tutte le pagine HTML implementate.
+Per ciascuna pagina abbiamo testato il click ad ogni link presente e se necessaria la compilazione di form.
+Riassumiamo i test implementati:
+
+**HOMEPAGE**
+
+ - Test Home come prima pagina caricata
+ - Test apertura cartella clinica di un paziente
+
+**CARTELLA CLINICA**
+
+ - Test click link Home
+ - Test apertura pagina inserimento diagnosi
+ - Test apertura pagina inserimento segnalazione 
+
+**NUOVA DIAGNOSI**
+
+- Test inserimento dati corretti
+- Test invio form senza aver inserito il campo "nome" (obbligatorio)
+- Test click link Home
+- Test click link cartella clinica paziente
+
+**NUOVA VISITA**
+
+- Test inserimento visita 
+- Test click link Home
+- Test click link cartella clinica paziente 
+
+**NUOVA PRESCRIZIONE**
+
+- Test inserimento dati corretti
+- Test invio form senza aver inserito il campo "note" (obbligatorio)
+- Test reset button 
+- Test click link Home
+- Test click link cartella clinica paziente 
+
+**SCHEDA VISITA**
+
+- Test click link nuova prescrizione
+- Test open report visita dalla cartella clinica (Link nuova prescrizione non più presente)
+- Test click link Home
+- Test click link cartella clinica paziente 
 
 #
 # SCELTE IMPLEMENTATIVE
